@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 100px;
+    margin: 0 1rem;
+}
+
+/* .squish {
+    animation: squish 500ms 1 normal ease-in-out;
+}
+
+@keyframes squish {
+    25% {
+        transform: scale(1.4,0.6);
+    }
+    50% {
+        transform: scale(0.9,1.2) translateY(-40px);
+        color: chartreuse;
+    }
+    75% {
+        transform: scale(1.2,0.8);
+    }
+} */
+
+#i {
+    animation: moveRight 3600ms 1 normal linear;
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(-300px);
+    }
+    4% {
+        transform: scale(1.4,0.8) translateX(-270px);
+    }
+    8% {
+        transform: scale(0.9,1) translateY(-80px) translateX(-240px);
+    }
+    12% {
+        transform: scale(1.2,0.8) translateX(-210px);
+    }
+    16% {
+        transform: scale(1.4,0.8) translateX(-180px);
+    }
+    20% {
+        transform: scale(0.9,1) translateY(-80px) translateX(-150px);
+    }
+    24% {
+        transform: scale(1.2,0.8) translateX(-120px);
+    }
+    28% {
+        transform: scale(1.4,0.8) translateX(-90px);
+    }
+    32% {
+        transform: scale(0.9,1) translateY(-80px) translateX(-60px);
+    }
+    36% {
+        transform: scale(1.2,0.8) translateX(-30px);
+    }
+    40% {
+        transform: translateX(-20px);
+    }
+    44% { 
+        transform: translateX(-20px);
+    }
+    48% {
+        transform: translateX(-20px);
+    }
+    52% {
+        transform: scale(1.4,0.6) translateX(-20px);
+    }
+    56% {
+        transform: scale(0.8,1.1) translateY(-80px);
+    }
+    60% {
+        transform: scale(1.2,0.8) translateY(-60px);
+    }
+    64% {
+        transform: scale(1.3,0.8) translateY(-60px);
+    }
+    68% {
+        transform: scale(0.8,1.1) translateY(-150px);
+    }
+    72% {
+        transform: scale(1.2,0.8) translateY(-50px);
+    }
+    76% {
+        transform: scale(1.3,0.8) translateY(-50px);
+    }
+    80% {
+        transform: scale(0.8,1.1) translateY(-100px);
+    }
+    81% {
+        transform: scale(1);
+    }
+}
+
+#fake {
+    animation-fill-mode: forwards;
+    animation: squish 3600ms 1 normal linear;
+    transform: translateX(-101px);
+    background-color: white;
+    width: 8px;
+    height: 70px;
+}
+
+@keyframes squish {
+    0% {
+        transform: translateX(-101px);
+        width: 8px;
+        height: 70px;
+    }
+    59% {
+        transform: translateX(-101px);
+        width: 8px;
+        height: 70px;
+    }
+    60% {
+        transform: translateX(-101px);
+        width: 12px;
+        height: 50px;
+    }
+    71% {
+        transform: translateX(-101px);
+        width: 12px;
+        height: 50px;
+    }
+    72% {
+        transform: translateX(-101px);
+        margin-top: 20px;
+        width: 15px;
+        height: 40px;
+    }
+    83% {
+        transform: translateX(-101px);
+        margin-top: 20px;
+        width: 15px;
+        height: 40px;
+    }
+    84% {
+        transform: translateX(-101px);
+        margin-top: 70px;
+        width: 25px;
+        height: 1px;
+        filter: opacity(1);
+    }
+    85% {
+        transform: translateX(-101px);
+        margin-top: 70px;
+        width: 25px;
+        height: 1px;
+        visibility: hidden;
+    }
+    100% {
+        visibility: hidden;
+    }
+
+}
